@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@500&family=Raleway:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.influencer-logo h2 {
+  font-size: 24px;
+  color: #3a3a3a;
+}
+/* 
+*********************
+ COmmon CSS Part
+ **********************
+  */
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1200px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.influencer-navigation {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-size: 18px;
+}
+.influencer-navigation li {
+  list-style: none;
+  margin: 10px;
+}
+.influencer-navigation li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3a3a3a;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+.section-title h1 {
+  color: #3a3a3a;
+}
+.collection-title {
+  color: #3a3a3a;
+  text-align: center;
+  margin: 50px;
+}
+.ads-banner img {
+  padding: 15px 30px;
+}
+.primary-button {
+  outline: 0;
+  border: 0;
+  align-items: flex-start;
+  padding: 10px 24px;
+  background: #e02c6d;
+  border-radius: 41px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+.primary-button a {
+  background-color: #e02c6d;
+}
+.primary-button:active {
+  top: 5px;
+  box-shadow: 0 2px 0 #a12268;
+}
+.primary-button2 {
+  outline: 0;
+  border: 0;
+  align-items: flex-start;
+  padding: 10px 24px;
+  background: #e02c6d;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+.primary-button2:active {
+  top: 10px;
+  box-shadow: 0 2px 0 rgba(141, 3, 3, 0.87);
+}
+/* ............
+  Influence banner Part Style
+  ..............
+   */
+.influencer-banner {
+  height: calc(100vh - 80px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.influencer-banner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.influencer-banner-left h1 {
+  font-size: 45px;
+}
+.influencer-banner-left p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 0;
+  text-align: justify;
+}
+.influencer-banner-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.banner-right img {
+  width: 100%;
+}
+/* ............
+  Collection Part Style
+  ..............
+   */
+.popular-collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 30px;
+}
+.popular-collection {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  align-items: center;
+}
+.collection-name {
+  font-size: 28px;
+  margin: 0 20px;
+  text-align: left;
+  align-items: center;
+}
+.collection-price {
+  margin: 0 20px;
+  font-size: 24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+}
+.collection-rating {
+  margin: 0 20px;
+  font-size: 24px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.collection-description {
+  margin: 0 20px 15px;
+  font-size: 14px;
+  color: #787885;
+  text-align: justify;
+}
+.collection-banner img {
+  margin: 20px;
+  width: 320px;
+  height: 320px;
+}
+
+.fa-star {
+  font-size: 24px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+
+.fa-star.empty {
+  color: #aeaeae;
+}
+.see-more {
+  margin: 10px;
+  text-align: end;
+}
+.see-more a {
+  color: #e02c6d;
+  text-decoration: none;
+}
+/* 
+***********
+Last Section
+***********
+*/
+.influencer-products {
+  height: calc(100vh - 80px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px;
+}
+.influencer-product-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 20px;
+}
+
+.influencer-product-right h1 {
+  font-size: 45px;
+}
+.influencer-product-right p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 0;
+  text-align: justify;
+}
+.influencer-product-left-left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.influencer-product-left img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* 
+**************
+Footer
+**************
+ */
+footer {
+  height: 239px;
+  align-items: center;
+  background-color: #0a0826;
+  padding: 20px;
+}
+footer h1 {
+  color: white;
+  text-align: center;
+  background-color: #0a0826;
+}
+footer p {
+  color: white;
+  text-align: center;
+  background-color: #0a0826;
+}
+.socialsite-logo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 30px;
+  margin-left: 550px;
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 350px;
+  align-items: center;
+  background-color: #0a0826;
+}
+#nav-toggle {
+  display: none;
+}
+.nav-toggler-icon {
+  display: none;
+  color: black;
+  font-size: 30px;
+}
+/* 
+***************
+Responsive CSS
+**************
+*/
+/* ..........................
+ Media Queries 
+.............................
+*/
+/* Mobile Devices */
+@media (max-width: 668px) {
+  .influencer-banner {
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+  .popular-collections,
+  .influencer-products {
+    grid-template-columns: 1fr;
+  }
+  .influencer-product-left img {
+    width: 300px;
+  }
+  .influencer-banner-left {
+    order: 2;
+    padding: 50px 0;
+  }
+  .nav-toggler-icon {
+    display: block;
+  }
+  .influencer-navigation {
+    position: fixed;
+    top: 80px;
+    left: 0;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-direction: flex;
+    text-align: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: gray;
+    padding: 20px 0;
+    transform: translateY(-330px);
+    transition: 0.5s ease-in-out;
+  }
+
+  .influencer-navigation li a {
+    color: gray;
+  }
+  #nav-toggle:checked ~ .influencer-navigation {
+    transform: translateY(0px);
+  }
+  .socialsite-logo {
+    position: fixed;
+  }
+  .socialsite-logo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Tablet CSS */
+
+@media (max-width: 950px) {
+  .influencer-products {
+    grid-template-columns: 1fr 1fr;
+  }
+  .banner-left h1 {
+    font-size: 35px;
+  }
+  .influencer-navigation {
+    position: fixed;
+  }
+}
